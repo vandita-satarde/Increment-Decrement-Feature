@@ -78,5 +78,20 @@
         <button onclick="" class="buy-btn">Buy Now</button>
     </div>
     
+    <script>
+        const quantityElement = document.getElementById('quantity');
+
+        function increase(){
+            let quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = ++quantity;
+        }
+
+        function decrease(){
+            let quantity = parseInt(quantityElement.innerText);
+            if(quantity > 0){
+                quantityElement.innerText = --quantity;
+            }
+        }
+    </script>
 </body>
 </html>
